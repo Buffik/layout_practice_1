@@ -7,7 +7,36 @@
     <title>Layout practice # 1</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo-wrapper">
+          <span class="header__hamburger hamburger"
+            ><span class="hamburger__line"></span
+          ></span>
+          <a href="#" class="logo">
+            <object
+              type="image/svg+xml"
+              data="./src/img/logo.svg"
+              class="logo-object"
+            >
+              Your browser does not support SVG
+            </object>
+          </a>
+        </div>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__link"><a href="#">Home</a></li>
+            <li class="navigation__link"><a href="#">Services</a></li>
+            <li class="navigation__link"><a href="#">About</a></li>
+            <li class="navigation__link"><a href="#">Product</a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="button button_bordered">Sign In</button>
+          <button class="button button_colored">Sign Up</button>
+        </div>
+      </div>
+    </header>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
