@@ -66,3 +66,21 @@
     }
   }
 }
+
+.link-button {
+  color: $color-primary;
+  @extend %font-add;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+  &:hover {
+    color: $color-red;
+    .ico_play {
+      background-image: url('../img/icons/play-hover.svg');
+    }
+  }
+
+  &__text {
+    margin-left: 9px;
+  }
+}

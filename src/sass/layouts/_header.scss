@@ -11,6 +11,23 @@
     }
   }
 
+  &__logo-line {
+    display: flex;
+    @include media-mobile {
+      justify-content: center;
+      flex-grow: 1;
+      position: relative;
+    }
+  }
+
+  &__hamburger {
+    margin-right: 37px;
+    @include media-mobile {
+      position: absolute;
+      left: 0;
+    }
+  }
+
   &__navigation {
     @include media-tablet {
       display: none;
@@ -36,6 +53,19 @@
           }
         }
       }
+    }
+  }
+
+  &__buttons {
+    > .button {
+      margin-left: 14px;
+      &:first-child {
+        margin-left: 14px;
+        margin-left: 0;
+      }
+    }
+    @include media-mobile {
+      display: none;
     }
   }
 }
