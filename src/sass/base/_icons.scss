@@ -1,7 +1,4 @@
-.ico {
-  cursor: pointer;
-  display: inline-block;
-
+.icon {
   &-square {
     width: 50px;
     height: 50px;
@@ -34,10 +31,39 @@
       background-color: $color-light;
     }
   }
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
 
   &_play {
     background-image: url('../img/icons/play.svg');
     width: 18px;
     height: 19px;
+  }
+
+  &_arrow {
+    background-image: url('../img/icons/arrow.svg');
+    width: 12px;
+    height: 17px;
+  }
+
+  &_snake {
+    background-image: url('../img/icons/snake.svg');
+    width: 18px;
+    height: 14px;
+  }
+
+  &_heart {
+    background-image: url('../img/icons/heart.svg');
+    width: 17px;
+    height: 15px;
+  }
+
+  &_clock {
+    background-image: url('../img/icons/clock.svg');
+    width: 15px;
+    height: 17px;
   }
 }

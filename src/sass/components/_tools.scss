@@ -1,0 +1,53 @@
+.tools {
+  &__wrapper {
+    padding-bottom: 90px;
+    background-image: url('../img/backgrounds/tools-bg.svg');
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    max-width: 462px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__button {
+    margin-top: 60px;
+    text-align: center;
+    @include media-mobile {
+      margin-top: 0;
+    }
+  }
+}
+
+.tool {
+  @include media-tablet {
+    text-align: center;
+  }
+
+  &-container {
+    @include media-tablet {
+      flex-wrap: wrap;
+      > .tool {
+        flex-basis: 43%;
+      }
+    }
+    @include media-mobile {
+      > .tool {
+        flex-basis: 100%;
+        margin-bottom: 47px;
+      }
+    }
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+}
