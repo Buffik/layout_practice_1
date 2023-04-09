@@ -13,6 +13,8 @@
 
   &__logo-wrapper {
     display: flex;
+    position: relative;
+    z-index: 5;
     @include media-mobile {
       justify-content: center;
       flex-grow: 1;
@@ -21,6 +23,7 @@
   }
 
   &__hamburger {
+    @extend %transition;
     margin-right: 37px;
     @include media-mobile {
       position: absolute;
@@ -30,7 +33,10 @@
 
   &__navigation {
     @include media-tablet {
-      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
     }
 
     & .navigation {
@@ -57,6 +63,8 @@
   }
 
   &__buttons {
+    position: relative;
+    z-index: 5;
     > .button {
       margin-left: 14px;
       &:first-child {

@@ -5,6 +5,9 @@ import { Modal } from './js/Modal';
 import data from './js/data/data';
 
 window.onload = function () {
+  // Handle Burger-menu
+  addBurgerClickHandler();
+
   // Render Articles
   if (data) {
     renderArticlesToDom();
@@ -15,6 +18,17 @@ window.onload = function () {
 
   // Generate Base Modal from Modal Class
   addToolsClickHandler();
+};
+
+const BURGER_BUTTON = document.querySelector('.hamburger');
+const NAVIGATION_MENU = document.querySelector('.header__navigation');
+
+const addBurgerClickHandler = () => {
+  BURGER_BUTTON.addEventListener('click', () => {
+    NAVIGATION_MENU.classList.toggle('active-burger');
+    BURGER_BUTTON.classList.toggle('rotate-burger');
+    document.body.classList.toggle('no-scroll');
+  });
 };
 
 const addTagsClickHandler = () => {

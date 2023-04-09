@@ -3,6 +3,17 @@
   font-size: 1.5rem;
   line-height: 2.8rem;
 
+  @include media-tablet {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 120px 0 53px 0;
+    gap: 32px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
   &__link {
     list-style: none;
     padding: 0 10px;
@@ -11,11 +22,24 @@
     &:hover {
       color: $color-primary;
     }
+
+    @include media-tablet {
+      @include font($size: 2.2rem, $weight: normal);
+    }
   }
 }
 
 .header__navigation {
-  @include media-tablet {
-    display: none;
-  }
+  top: -100%;
+  background-color: $color-light;
+  @extend %transition;
+}
+
+.active-burger {
+  top: 0;
+  bottom: initial;
+}
+
+.rotate-burger {
+  transform: rotate(270deg);
 }

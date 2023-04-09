@@ -74,12 +74,14 @@ export class Modal {
 
   openModal() {
     document.body.append(this.overlay);
+    document.body.classList.add('no-scroll');
   }
 
   closeModal(e) {
     let classes = e.target.classList;
     if (classes.contains('overlay') || classes.contains('modal__close-icon')) {
       document.querySelector('.overlay').remove();
+      document.body.classList.remove('no-scroll');
     }
   }
 }
