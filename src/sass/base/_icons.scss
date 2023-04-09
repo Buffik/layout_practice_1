@@ -66,4 +66,16 @@
     width: 15px;
     height: 17px;
   }
+
+  &_phone {
+    background-image: url('../img/icons/phone.svg');
+    width: 13px;
+    height: 13px;
+  }
+
+  &_letter {
+    background-image: url('../img/icons/letter.svg');
+    width: 11px;
+    height: 8px;
+  }
 }
