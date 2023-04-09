@@ -34,10 +34,13 @@
   }
 
   &-wrapper {
+    column-gap: 32px;
+    justify-content: center;
+
     > * {
       margin-bottom: 30px;
       @include media-tablet {
-        flex-basis: 48%;
+        flex-basis: 80%;
       }
       @include media-mobile {
         flex-basis: 100%;
@@ -62,6 +65,10 @@
     @include media-tablet {
       position: absolute;
       top: 0;
+      width: 100%;
+      height: 56%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }
