@@ -17,9 +17,24 @@ $image-gap: 32px;
   padding: 35px;
   position: relative;
   width: calc(30% - $image-gap);
+  min-width: 347px;
+  @include media-mobile {
+    min-width: 300px;
+  }
+  @include media-mobileSmall {
+    min-width: 280px;
+  }
 
   &-container {
     padding-right: $image-gap;
+    column-gap: $image-gap;
+    &::after {
+      content: none;
+    }
+    @include media-laptop {
+      justify-content: space-around;
+      gap: $image-gap;
+    }
   }
 
   &__name {

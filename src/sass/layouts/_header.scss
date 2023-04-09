@@ -11,7 +11,7 @@
     }
   }
 
-  &__logo-line {
+  &__logo-wrapper {
     display: flex;
     @include media-mobile {
       justify-content: center;

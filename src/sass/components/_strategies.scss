@@ -65,3 +65,27 @@
     }
   }
 }
+
+.article-modal__content {
+  .strategy {
+    &__image {
+      width: 100%;
+      @include media-tablet {
+        position: static;
+      }
+    }
+
+    &__date {
+      @include font($size: 1.3rem, $weight: normal);
+      margin: 0 0 5px;
+    }
+
+    &__name {
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin: 0 0 12px;
+    }
+  }
+}

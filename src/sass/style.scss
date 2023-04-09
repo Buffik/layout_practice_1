@@ -8,7 +8,11 @@
 // base
 @import './base/base';
 @import './base/buttons';
+@import './base/logo';
 @import './base/icons';
+@import './base/tags';
+@import './base/hamburger';
+@import './base/modal';
 
 // layouts
 @import './layouts/wrapper';
@@ -17,8 +21,9 @@
 @import './layouts/footer';
 
 // components
+@import './components/navigation';
 @import './components/contact_us';
 @import './components/promo';
 @import './components/tools';
-@import './components/about_us';
 @import './components/strategies';
+@import './components/about_us';
