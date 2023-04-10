@@ -30,9 +30,11 @@
 }
 
 .header__navigation {
-  top: -100%;
-  background-color: $color-light;
   @extend %transition;
+  @include media-tablet {
+    top: -100%;
+    background-color: $color-light;
+  }
 }
 
 .active-burger {

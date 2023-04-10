@@ -2,11 +2,15 @@ import './sass/style.scss';
 import { Article } from './js/Article';
 import { ArticleModal } from './js/ArticleModal';
 import { Modal } from './js/Modal';
+import { addNavLinksHandler } from './js/ScrollSmooth';
 import data from './js/data/data';
 
 window.onload = function () {
   // Handle Burger-menu
   addBurgerClickHandler();
+
+  // Handle clicks to navigation
+  addNavLinksHandler(BURGER_BUTTON, NAVIGATION_MENU);
 
   // Render Articles
   if (data) {
