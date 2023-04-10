@@ -3,6 +3,7 @@ import secondPic from '../../img/strategies/2.jpg';
 import thirdPic from '../../img/strategies/3.jpg';
 import fourthPic from '../../img/strategies/4.jpg';
 import fifthPic from '../../img/strategies/5.jpg';
+import logoIcon from '../../img/logo.svg';
 
 const data = [
   {
@@ -54,3 +55,5 @@ const data = [
 ];
 
 export default data;
+
+export const logoData = logoIcon;

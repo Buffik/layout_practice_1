@@ -3,7 +3,7 @@ import { Article } from './js/Article';
 import { ArticleModal } from './js/ArticleModal';
 import { Modal } from './js/Modal';
 import { addNavLinksHandler } from './js/ScrollSmooth';
-import data from './js/data/data';
+import data, { logoData } from './js/data/data';
 
 window.onload = function () {
   // Handle Burger-menu
@@ -22,10 +22,17 @@ window.onload = function () {
 
   // Generate Base Modal from Modal Class
   addToolsClickHandler();
+
+  // Handle logo
+
+  HEADER_LOGO.data = logoData;
+  FOOTER_LOGO.data = logoData;
 };
 
 const BURGER_BUTTON = document.querySelector('.hamburger');
 const NAVIGATION_MENU = document.querySelector('.header__navigation');
+const HEADER_LOGO = document.getElementById('headerLogo');
+const FOOTER_LOGO = document.getElementById('footerLogo');
 
 const addBurgerClickHandler = () => {
   BURGER_BUTTON.addEventListener('click', () => {
