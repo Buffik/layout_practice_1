@@ -24,15 +24,24 @@ window.onload = function () {
   addToolsClickHandler();
 
   // Handle logo
-
   HEADER_LOGO.data = logoData;
   FOOTER_LOGO.data = logoData;
+
+  // Handle click to form submit button
+  addSubmitPlaceholderAction();
 };
 
 const BURGER_BUTTON = document.querySelector('.hamburger');
 const NAVIGATION_MENU = document.querySelector('.header__navigation');
 const HEADER_LOGO = document.getElementById('headerLogo');
 const FOOTER_LOGO = document.getElementById('footerLogo');
+const SUBMIT_BUTTON = document.getElementById('submitButton');
+
+const addSubmitPlaceholderAction = () => {
+  SUBMIT_BUTTON.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+};
 
 const addBurgerClickHandler = () => {
   BURGER_BUTTON.addEventListener('click', () => {
