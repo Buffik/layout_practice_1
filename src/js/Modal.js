@@ -80,8 +80,10 @@ export class Modal {
   closeModal(e) {
     let classes = e.target.classList;
     if (classes.contains('overlay') || classes.contains('modal__close-icon')) {
-      document.querySelector('.overlay').remove();
-      document.body.classList.remove('no-scroll');
+      if (document.querySelector('.overlay')) {
+        document.querySelector('.overlay').remove();
+        document.body.classList.remove('no-scroll');
+      }
     }
   }
 }
